@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>سبد خرید پیشرفته</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-right">
+                <ul class="nav-links">
+                    <li><a href="#">خانه</a></li>
+                    <li><a href="#">خلمه</a></li>
+                    <li><a href="#">فروشگاه</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                </ul>
+            </div>
+            <div class="navbar-left">
+                <button id="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="cart-box" id="cart-box">
+            <h3>سبد خرید</h3>
+            <ul id="cart-items"></ul>
+            <button id="clear-cart">خالی کردن سبد</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active" style="background-image: url('https://picsum.photos/id/1015/800/400');">
+                    <div class="caption">
+                        <h2>عنوان عکس اول</h2>
+                        <p>توضیح کوتاه </p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('https://picsum.photos/id/1016/800/400');">
+                    <div class="caption">
+                        <h2>عنوان عکس دوم</h2>
+                        <p>توضیح کوتاه </p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('https://picsum.photos/id/1018/800/400');">
+                    <div class="caption">
+                        <h2>عنوان عکس سوم</h2>
+                        <p>توضیح کوتاه </p>
+                    </div>
+                </div>
+            </div>
+            <button class="next">&#10094;</button>
+            <button class="prev">&#10095;</button>
+        </div>
+
+        <section class="products-section">
+            <h2 class="products-title">محصولات</h2>
+            <div class="products-cards">
+                <div class="product-card">
+                    <img src="https://picsum.photos/id/1011/300/200" alt="محصول ۱" />
+                    <h3>محصول شماره ۱</h3>
+                    <p>000,000,000 تومان</p>
+                    <button class="add-to-cart-btn" data-title="محصول شماره ۱">افزودن به سبد</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/id/1012/300/200" alt="محصول ۲" />
+                    <h3>محصول شماره ۲</h3>
+                    <p>000,000,000 تومان</p>
+                    <button class="add-to-cart-btn" data-title="محصول شماره ۲">افزودن به سبد</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/id/1013/300/200" alt="محصول ۳" />
+                    <h3>محصول شماره ۳</h3>
+                    <p>000,000,000 تومان</p>
+                    <button class="add-to-cart-btn" data-title="محصول شماره ۳">افزودن به سبد</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2 class="faq-title">سوالات متداول</h2>
+            <div class="faq-cards">
+                <div class="faq-card">
+                    <h3><i class="fas fa-question-circle"></i> متن سوال </h3>
+                    <p>جواب</p>
+                </div>
+                <div class="faq-card">
+                    <h3><i class="fas fa-question-circle"></i> متن سوال </h3>
+                    <p>جواب</p>
+                </div>
+                <div class="faq-card">
+                    <h3><i class="fas fa-question-circle"></i> متن سوال </h3>
+                    <p>جواب</p>
+                </div>
+                <div class="faq-card">
+                    <h3><i class="fas fa-question-circle"></i> متن سوال </h3>
+                    <p>جواب</p>
+                </div>
+                <div class="faq-card">
+                    <h3><i class="fas fa-question-circle"></i> متن سوال </h3>
+                    <p>جواب</p>
+                </div>
+                <div class="faq-card">
+                    <h3><i class="fas fa-question-circle"></i> متن سوال </h3>
+                    <p>جواب</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>لینک‌ها</h3>
+                <ul>
+                    <li>
+                        <div class="link-item">
+                            <span class="icon-circle instagram"><i class="fab fa-instagram"></i></span>
+                            <a href="#">اینستاگرام</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="link-item">
+                            <span class="icon-circle telegram"><i class="fab fa-telegram"></i></span>
+                            <a href="#">تلگرام</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="link-item">
+                            <span class="icon-circle linkedin"><i class="fab fa-linkedin"></i></span>
+                            <a href="#">لینکدین</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-about">
+                <h3>درباره ما</h3>
+                <p>متن</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
